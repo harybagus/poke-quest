@@ -19,9 +19,9 @@
 <body>
 
     <!-- header -->
-    <header id="header">
+    <header id="header" class="fixed-top bg-white">
         <div class="container">
-            <div class="container bg-success text-white p-3 my-3 rounded-3">
+            <div class="container bg-success text-white p-3 mt-3 rounded-3 shadow">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="logo-wrapper">
@@ -32,10 +32,11 @@
 
                     <div class="col-md-8">
                         <div class="search-wrapper mt-3 mt-md-0">
-                            <div class="search-wrap bg-white pt-2 rounded-5">
+                            <div class="col-10 col-md-8 col-lg-6 search-wrap bg-white pt-2 rounded-5">
                                 <i class="bi bi-search search-icon text-success"></i>
-                                <input type="text" class="search-input mx-2 text-success" placeholder="Nama pokemon">
-                                <i class="bi bi-x-lg search-close-icon text-success"></i>
+                                <input type="text" class="col-9 search-input text-success mx-2"
+                                    placeholder="Nama pokemon">
+                                <i class="float-end bi-x-lg search-close-icon text-success d-none"></i>
                             </div>
 
                             <div class="sort-wrapper ms-2">
@@ -68,9 +69,20 @@
     </header>
     <!-- end of header -->
 
+    <!-- content -->
+    <section id="content" class="mb-4">
+        <div class="container">
+            <div class="row gy-4 justify-content-center list-wrapper"></div>
+        </div>
+
+        <div id="not-found-message" class="fw-bold text-success d-none">Pokemon tidak ditemukan</div>
+    </section>
+    <!-- end of content -->
+
     <!-- JavaScript -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/search.js"></script>
 
 </body>
 
