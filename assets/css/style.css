@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-base: "Poppins", sans-serif;
+  --drop-shadow-inner: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+body {
+  font-family: var(--font-base);
+}
+
+/* header */
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: default;
+}
+
+.logo-wrapper img {
+  transition: all 0.4s ease;
+}
+
+.logo-wrapper img:hover {
+  transform: rotate(-15deg);
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search-wrap,
+.sort-wrap {
+  padding: 5px 15px;
+  box-shadow: var(--drop-shadow-inner);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 175px;
+}
+
+.search-input::placeholder {
+  font-size: 14px;
+}
+
+.filter-wrap {
+  box-shadow: var(--drop-shadow-inner);
+}
+
+.filter-wrap input {
+  accent-color: var(--bs-success);
+}
+/* end of header */
+
+@media (min-width: 768px) {
+  .logo-wrapper {
+    justify-content: start;
+  }
+
+  .search-wrapper {
+    justify-content: end;
+  }
+}
