@@ -31,8 +31,7 @@ body {
   justify-content: center;
 }
 
-.search-wrap,
-.sort-wrap {
+.search-wrap {
   padding: 5px 15px;
   box-shadow: var(--drop-shadow-inner);
 }
@@ -46,12 +45,23 @@ body {
   font-size: 14px;
 }
 
+.sort-wrap {
+  cursor: pointer;
+  padding: 5px 15px;
+  box-shadow: var(--drop-shadow-inner);
+}
+
 .filter-wrap {
   box-shadow: var(--drop-shadow-inner);
 }
 
 .filter-wrap input {
+  cursor: pointer;
   accent-color: var(--bs-success);
+}
+
+.filter-wrap label {
+  cursor: pointer;
 }
 /* end of header */
 
@@ -66,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 180px;
+  height: 200px;
   box-sizing: border-box;
 }
 
@@ -76,11 +86,13 @@ body {
 }
 
 .card-custom-number {
-  width: 50%;
+  width: 40%;
+  font-size: 14px;
+  padding: 5px 0;
   display: inline;
   background-color: var(--bs-success);
   color: #fff;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 7.5px 7.5px;
   text-align: center;
 }
 
